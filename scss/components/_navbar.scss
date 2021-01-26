@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  // display: none;
 
   li {
     list-style: none;
@@ -43,6 +44,7 @@
   left: 0;
   z-index: 50;
   background-color: #1b1d23a3;
+  // display: none;
 }
 
 .hamburger {

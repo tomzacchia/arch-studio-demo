@@ -1,3 +1,5 @@
+@import "./mixins";
+
 $font-weight-thin: 100;
 $font-weight-med: 500;
 $font-weight-bold: 800;
@@ -19,9 +21,9 @@ body {
 
 .h1-bold {
   font-weight: $font-weight-bold;
-  font-size: 80px;
-  line-height: 80px;
-  letter-spacing: -2px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
 }
 
 .h2 {
@@ -40,4 +42,16 @@ body {
 
 h3 {
   @extend .h3;
+}
+
+.white-text {
+  color: white;
+}
+
+@include tablet {
+  .h1-bold {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+  }
 }

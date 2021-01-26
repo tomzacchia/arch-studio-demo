@@ -1,0 +1,53 @@
+@import "../mixins";
+
+.hero {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hero-dark-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1b1d235e;
+}
+
+.primary-hero {
+  height: 600px;
+  background-image: url("../../assets/home/mobile/image-hero-paramour.jpg");
+  background-size: cover;
+}
+
+.hero-content {
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 20;
+}
+
+.hero-content h1 {
+  font-weight: 500;
+}
+
+.hero-content .hero-description {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+@include tablet {
+  .hero {
+    margin: 0 4rem;
+  }
+
+  .primary-hero {
+    background-image: url("../../assets/home/tablet/image-hero-paramour.jpg");
+  }
+
+  .primary-hero .hero-description {
+    width: 29rem;
+  }
+}

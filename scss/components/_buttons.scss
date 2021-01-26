@@ -1,0 +1,19 @@
+@import "../colors";
+
+.button {
+  padding: 12px 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: $very-dark-blue;
+  color: white;
+  border: none;
+}
+
+.button p {
+  font-weight: 800;
+}
+
+.button i {
+  margin-left: 1rem;
+}

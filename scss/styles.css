@@ -27,9 +27,9 @@ body {
 
 .h1-bold {
   font-weight: 800;
-  font-size: 80px;
-  line-height: 80px;
-  letter-spacing: -2px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
 }
 
 .h2 {
@@ -44,6 +44,42 @@ body {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
+}
+
+.white-text {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .h1-bold {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+  }
+}
+
+.button {
+  padding: 12px 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1b1d23;
+  color: white;
+  border: none;
+}
+
+.button p {
+  font-weight: 800;
+}
+
+.button i {
+  margin-left: 1rem;
 }
 
 .container, .container-no-padding {
@@ -80,9 +116,9 @@ body {
 
 .h1-bold {
   font-weight: 800;
-  font-size: 80px;
-  line-height: 80px;
-  letter-spacing: -2px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
 }
 
 .h2 {
@@ -97,6 +133,18 @@ body {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
+}
+
+.white-text {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .h1-bold {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+  }
 }
 
 .nav {
@@ -207,6 +255,64 @@ body {
   }
   .dark-overlay {
     display: none;
+  }
+}
+
+.hero {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-dark-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1b1d235e;
+}
+
+.primary-hero {
+  height: 600px;
+  background-image: url("../../assets/home/mobile/image-hero-paramour.jpg");
+  background-size: cover;
+}
+
+.hero-content {
+  padding: 0 2rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 20;
+}
+
+.hero-content h1 {
+  font-weight: 500;
+}
+
+.hero-content .hero-description {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin: 0 4rem;
+  }
+  .primary-hero {
+    background-image: url("../../assets/home/tablet/image-hero-paramour.jpg");
+  }
+  .primary-hero .hero-description {
+    width: 29rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
