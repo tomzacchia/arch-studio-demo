@@ -32,14 +32,14 @@ body {
   letter-spacing: -2px;
 }
 
-h2 {
+.h2 {
   font-weight: 800;
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2px;
 }
 
-h3 {
+.h3, h3, .nav-title {
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
@@ -49,10 +49,54 @@ h3 {
 .container, .container-no-padding {
   padding: 0 1rem;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container-no-padding {
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container, .container-no-padding {
+    padding: 0 4rem;
+  }
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.h1-light {
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: -5px;
+}
+
+.h1-bold {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+
+.h2 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+}
+
+.h3, h3, .nav-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
 }
 
 .nav {
@@ -113,5 +157,40 @@ h3 {
   height: 2px;
   width: 100%;
   background-color: black;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav-title {
+    font-size: 26px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    padding: 0;
+    padding-left: 3rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: transparent;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: initial;
+  }
+  .menu li {
+    padding: 0 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

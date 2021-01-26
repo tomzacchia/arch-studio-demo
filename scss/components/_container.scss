@@ -1,9 +1,18 @@
+@import "../mixins";
+
 .container {
   padding: 0 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .container-no-padding {
   @extend .container;
   padding: 0;
+}
+
+@include tablet {
+  .container {
+    padding: 0 4rem;
+  }
 }

@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../typography";
 
 .nav {
   padding-top: 1rem;
@@ -7,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.nav-title {
+  @extend .h3;
 }
 
 .menu {
@@ -39,4 +44,34 @@
   height: 2px;
   width: 100%;
   background-color: black;
+}
+
+@include tablet {
+  .nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+  .nav-title {
+    font-size: 26px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    padding: 0;
+    padding-left: 3rem;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    flex-direction: row;
+    position: initial;
+
+    li {
+      padding: 0 2rem;
+    }
+  }
 }
