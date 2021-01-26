@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.h1-light {
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: -5px;
+}
+
+.h1-bold {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+/*# sourceMappingURL=styles.css.map */
