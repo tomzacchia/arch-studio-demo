@@ -1,5 +1,6 @@
 @import "../mixins";
 @import "../typography";
+@import "../colors";
 
 .nav {
   padding-top: 1rem;
@@ -18,9 +19,10 @@
   margin: 0;
   width: 300px;
   height: 200px;
-  background: gainsboro;
+  background: $very-light-grey;
   display: initial;
   position: absolute;
+  z-index: 100;
   top: 100%;
   right: 0%;
   display: flex;
@@ -29,7 +31,18 @@
 
   li {
     list-style: none;
+    font-weight: bold;
   }
+}
+
+.dark-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  background-color: #1b1d23a3;
 }
 
 .hamburger {
@@ -72,6 +85,11 @@
 
     li {
       padding: 0 2rem;
+      font-weight: 500;
     }
+  }
+
+  .dark-overlay {
+    display: none;
   }
 }
