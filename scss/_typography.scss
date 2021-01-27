@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./colors";
 
 $font-weight-thin: 100;
 $font-weight-med: 500;
@@ -46,6 +47,10 @@ h3 {
 
 .white-text {
   color: white;
+}
+
+.medium-grey-text {
+  color: $medium-grey;
 }
 
 @include tablet {

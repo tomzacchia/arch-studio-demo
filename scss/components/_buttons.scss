@@ -17,3 +17,18 @@
 .button i {
   margin-left: 1rem;
 }
+
+.square-button {
+  height: 80px;
+  width: 80px;
+  border: 0;
+  padding: 0;
+  color: $medium-grey;
+  background-color: white;
+}
+
+.square-button-very-dark-blue {
+  @extend .square-button;
+  background-color: $very-dark-blue;
+  color: white;
+}

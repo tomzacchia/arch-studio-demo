@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../colors";
 
 .hero {
   position: relative;
@@ -38,9 +39,17 @@
   color: white;
 }
 
+.hero-pagination {
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+}
+
 @include tablet {
   .hero {
-    margin: 0 4rem;
+    margin: 0 $left-right-container-margin;
   }
 
   .primary-hero {
