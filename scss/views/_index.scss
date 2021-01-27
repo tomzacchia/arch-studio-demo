@@ -40,11 +40,35 @@
 }
 
 .hero-pagination {
-  width: fit-content;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: -80px;
+  display: none;
+}
+
+// WELCOME ===============================================================
+
+.welcome {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.welcome .welcome-large-text {
+  display: none;
+}
+
+.welcome-content-left h2 {
+  width: 16rem;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.43px;
+}
+
+.welcome-content-left p {
+  margin: 1rem 0;
+  color: $dark-grey;
+}
+
+.welcome-content-right {
+  display: none;
 }
 
 @include tablet {
@@ -58,5 +82,54 @@
 
   .primary-hero .hero-description {
     width: 29rem;
+  }
+
+  .welcome {
+    margin-top: 4rem;
+  }
+
+  .welcome .welcome-large-text {
+    display: inline;
+    font-size: 120px;
+    color: $very-light-grey;
+  }
+}
+
+@include desktop {
+  .hero-pagination {
+    display: inline;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+  }
+
+  .welcome .welcome-large-text {
+    position: absolute;
+    top: -7rem;
+    font-size: 200px;
+  }
+
+  .welcome {
+    margin-top: 14rem;
+  }
+
+  .welcome .welcome-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .welcome-content-left {
+    margin-left: 14rem;
+    padding-top: 4rem;
+    width: 450px;
+  }
+
+  .welcome-content-right {
+    width: 350px;
+    height: 568px;
+    display: inline;
+    background-image: url("../../assets/home/desktop/image-welcome.jpg");
   }
 }

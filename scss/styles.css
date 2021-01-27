@@ -18,7 +18,7 @@ body {
   letter-spacing: 0;
 }
 
-.h1-light {
+.h1-large {
   font-weight: 800;
   font-size: 200px;
   line-height: 200px;
@@ -129,7 +129,7 @@ body {
   letter-spacing: 0;
 }
 
-.h1-light {
+.h1-large {
   font-weight: 800;
   font-size: 200px;
   line-height: 200px;
@@ -211,6 +211,7 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  display: none;
 }
 
 .menu li {
@@ -226,6 +227,7 @@ body {
   left: 0;
   z-index: 50;
   background-color: #1b1d23a3;
+  display: none;
 }
 
 .hamburger {
@@ -366,15 +368,33 @@ body {
 }
 
 .hero-pagination {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: -80px;
+  display: none;
+}
+
+.welcome {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.welcome .welcome-large-text {
+  display: none;
+}
+
+.welcome-content-left h2 {
+  width: 16rem;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.43px;
+}
+
+.welcome-content-left p {
+  margin: 1rem 0;
+  color: #60636d;
+}
+
+.welcome-content-right {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -386,6 +406,56 @@ body {
   }
   .primary-hero .hero-description {
     width: 29rem;
+  }
+  .welcome {
+    margin-top: 4rem;
+  }
+  .welcome .welcome-large-text {
+    display: inline;
+    font-size: 120px;
+    color: #eeeff4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-pagination {
+    display: inline;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+  }
+  .welcome .welcome-large-text {
+    position: absolute;
+    top: -7rem;
+    font-size: 200px;
+  }
+  .welcome {
+    margin-top: 14rem;
+  }
+  .welcome .welcome-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcome-content-left {
+    margin-left: 14rem;
+    padding-top: 4rem;
+    width: 450px;
+  }
+  .welcome-content-right {
+    width: 350px;
+    height: 568px;
+    display: inline;
+    background-image: url("../../assets/home/desktop/image-welcome.jpg");
   }
 }
 /*# sourceMappingURL=styles.css.map */
