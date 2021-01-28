@@ -82,6 +82,61 @@
   margin-top: 2rem;
 }
 
+// Featured ===============================================================
+.featured {
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.featured-header button {
+  position: absolute;
+  justify-content: center;
+  width: calc(100% - 4rem);
+  bottom: 0;
+}
+
+.featured-card {
+  margin-top: 2rem;
+  height: 240px;
+  background-size: cover;
+  position: relative;
+}
+
+.featured-card.featured-1 {
+  background-image: url("../../assets/portfolio/mobile/image-del-sol.jpg");
+}
+.featured-card.featured-2 {
+  background-image: url("../../assets/portfolio/mobile/image-228b.jpg");
+}
+.featured-card.featured-3 {
+  background-image: url("../../assets/portfolio/mobile/image-prototype.jpg");
+}
+
+.featured-card h1 {
+  display: none;
+}
+
+.featured-card .linear-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.500437675070028) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.featured-card-text {
+  position: absolute;
+  z-index: 50;
+  color: white;
+  bottom: 2rem;
+  left: 2rem;
+}
+
 @include tablet {
   .hero {
     margin: 0 $left-right-container-margin;
@@ -114,9 +169,48 @@
     font-size: 56px;
     line-height: 56px;
   }
+
+  .featured {
+    margin-top: 12rem;
+  }
+
+  .featured-card.featured-1 {
+    background-image: url("../../assets/portfolio/tablet/image-del-sol.jpg");
+  }
+  .featured-card.featured-2 {
+    background-image: url("../../assets/portfolio/tablet/image-228b.jpg");
+  }
+  .featured-card.featured-3 {
+    background-image: url("../../assets/portfolio/tablet/image-prototype.jpg");
+  }
+
+  .featured-card h1 {
+    display: initial;
+    color: #ffffffb3;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    letter-spacing: 0;
+  }
+
+  .featured-header {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured-header button {
+    height: fit-content;
+    width: 7rem;
+    position: initial;
+    padding: 12px 1rem;
+  }
 }
 
 @include desktop {
+  .primary-hero {
+    background-image: url("../../assets/home/desktop/image-hero-paramour.jpg");
+  }
   .hero-content {
     padding-left: 190px;
   }
@@ -158,7 +252,32 @@
     background-image: url("../../assets/home/desktop/image-welcome.jpg");
   }
 
+  .secondary-hero {
+    background-image: url("../../assets/home/desktop/image-small-team.jpg");
+    background-size: cover;
+  }
+
   .secondary-hero.hero {
     margin-top: 6rem;
+  }
+
+  .featured-cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured-card {
+    height: 560px;
+    width: 350px;
+  }
+
+  .featured-card.featured-1 {
+    background-image: url("../../assets/portfolio/desktop/image-del-sol.jpg");
+  }
+  .featured-card.featured-2 {
+    background-image: url("../../assets/portfolio/desktop/image-228b.jpg");
+  }
+  .featured-card.featured-3 {
+    background-image: url("../../assets/portfolio/desktop/image-prototype.jpg");
   }
 }
