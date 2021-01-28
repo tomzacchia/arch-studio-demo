@@ -31,7 +31,7 @@
     </section>
 
     <nav class="container nav">
-      <p class="nav-title"> Arch </p>
+      <p class="nav-title pointer"> Arch </p>
       <ul class="menu">
         <li class="menu-item"> Portfolio </li>
         <li class="menu-item"> About Us </li>
@@ -39,9 +39,7 @@
       </ul>
       <div class="dark-overlay"></div>
       <div class="hamburger">
-        <div class="hamburger-1"></div>
-        <div class="hamburger-2"></div>
-        <div class="hamburger-3"></div>
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
 
@@ -124,7 +122,7 @@
         <div class="linear-overlay"></div>
         <div class="featured-card-text">
           <h3 class="h3"> Project Del Sol </h3>
-          <p> View All Projects </p>
+          <p class="pointer"> View All Projects </p>
         </div>
       </div>
       <div class="featured-card featured-2">
@@ -132,7 +130,7 @@
         <div class="linear-overlay"></div>
         <div class="featured-card-text">
           <h3 class="h3"> 228B Tower </h3>
-          <p> View All Projects </p>
+          <p class="pointer"> View All Projects </p>
         </div>
       </div>
       <div class="featured-card featured-3">
@@ -140,9 +138,49 @@
         <div class="linear-overlay"></div>
         <div class="featured-card-text">
           <h3 class="h3"> Le Prototype </h3>
-          <p> View All Projects </p>
+          <p class="pointer"> View All Projects </p>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    var is_bars = true;
+    const hamburver = document.querySelector(".hamburger");
+    const darkOverlayNode = document.querySelector(".dark-overlay");
+    const menuItemsContainer = document.querySelector(".menu");
+    const MENU_ANIMATION_CLASSNAME = "animate-menu";
+
+    hamburver.addEventListener("click", () => {
+      if (is_bars) {
+        hamburver.innerHTML = `<i class="fas fa-times"></i>`;
+      } else {
+        hamburver.innerHTML = `<i class="fas fa-bars"></i>`;
+      }
+
+      animationMenu();
+      is_bars = !is_bars;
+    });
+
+    function animationMenu() {
+      darkOverlayNode.classList.toggle("animate-overlay");
+      menuItemsContainer.classList.toggle(MENU_ANIMATION_CLASSNAME);
+    }
+
+    window.addEventListener("resize", () => {
+      const TABLET_SIZE = 768;
+
+      if (document.documentElement.clientWidth >= TABLET_SIZE && !is_bars) {
+        removeMenuAnimateClassIfExists();
+      }
+    });
+
+    function removeMenuAnimateClassIfExists() {
+      // menu-active, resize >= tablet, hide menu
+      if (menuItemsContainer.classList.contains(MENU_ANIMATION_CLASSNAME)) {
+        menuItemsContainer.classList.toggle(MENU_ANIMATION_CLASSNAME);
+        return;
+      }
+    }
+  </script>
 </html>

@@ -9,6 +9,7 @@
   .breadcrumb {
     display: initial;
     position: fixed;
+    z-index: 200;
     top: 79px;
     left: -1.5rem;
     display: flex;

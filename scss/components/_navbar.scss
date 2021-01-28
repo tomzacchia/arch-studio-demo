@@ -5,10 +5,14 @@
 .nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: fixed;
+  z-index: 501;
+  top: 0;
+  width: 100%;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .nav-title {
@@ -22,14 +26,14 @@
   height: 200px;
   background: $very-light-grey;
   display: initial;
-  position: absolute;
-  z-index: 100;
-  top: 100%;
-  right: 0%;
+  position: fixed;
+  z-index: 501;
+  top: 57px;
+  right: -22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  display: none;
+  transition: all 1s ease-in-out;
 
   li {
     list-style: none;
@@ -37,15 +41,25 @@
   }
 }
 
+.animate-menu {
+  transform: translateX(-22rem);
+}
+
 .dark-overlay {
   width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 100%;
+  height: calc(100% - 57px);
+  position: fixed;
+  z-index: 500;
+  top: 57px;
   left: 0;
   z-index: 50;
   background-color: #1b1d23a3;
   display: none;
+  transition: all 0.3s;
+}
+
+.animate-overlay {
+  display: initial;
 }
 
 .hamburger {
@@ -67,6 +81,8 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     justify-content: flex-start;
+    position: relative;
+    z-index: initial;
   }
 
   .nav-title {

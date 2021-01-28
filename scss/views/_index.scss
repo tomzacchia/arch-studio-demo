@@ -220,6 +220,7 @@
     width: fit-content;
     display: flex;
     position: absolute;
+    z-index: 100;
     bottom: 0;
     left: -80px;
   }
