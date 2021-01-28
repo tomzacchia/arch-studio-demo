@@ -39,7 +39,9 @@ body {
   letter-spacing: -2px;
 }
 
-.h3, h3, .nav-title {
+.h3,
+h3,
+.nav-title {
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
@@ -75,8 +77,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #1b1d23;
   color: white;
   border: none;
@@ -95,7 +97,8 @@ body {
   margin-left: 1rem;
 }
 
-.square-button, .square-button-very-dark-blue {
+.square-button,
+.square-button-very-dark-blue {
   height: 80px;
   width: 80px;
   border: 0;
@@ -105,7 +108,8 @@ body {
   cursor: pointer;
 }
 
-.square-button:hover, .square-button-very-dark-blue:hover {
+.square-button:hover,
+.square-button-very-dark-blue:hover {
   background-color: #eeeff4;
   color: #7d828f;
 }
@@ -120,11 +124,12 @@ body {
   color: white;
 }
 
-.container, .container-no-padding {
+.container,
+.container-no-padding {
   padding: 0 2rem;
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container-no-padding {
@@ -136,7 +141,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container, .container-no-padding {
+  .container,
+  .container-no-padding {
     padding: 0 8rem;
   }
 }
@@ -170,7 +176,9 @@ body {
   letter-spacing: -2px;
 }
 
-.h3, h3, .nav-title {
+.h3,
+h3,
+.nav-title {
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
@@ -205,11 +213,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav-title {
@@ -231,10 +239,10 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -246,7 +254,7 @@ body {
 
 .animate-menu {
   -webkit-transform: translateX(-22rem);
-          transform: translateX(-22rem);
+  transform: translateX(-22rem);
 }
 
 .dark-overlay {
@@ -275,11 +283,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .hamburger div {
@@ -293,8 +301,8 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     position: relative;
     z-index: initial;
   }
@@ -316,8 +324,8 @@ body {
     background-color: transparent;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     position: initial;
   }
   .menu li {
@@ -344,10 +352,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   .breadcrumb-line {
     margin-right: 1rem;
@@ -364,7 +372,7 @@ body {
 .hero {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hero-dark-overlay {
@@ -376,7 +384,7 @@ body {
 
 .primary-hero {
   height: 600px;
-  background-image: url("../../assets/home/mobile/image-hero-paramour.jpg");
+  background-image: url("./assets/home/mobile/image-hero-paramour.jpg");
   background-size: cover;
 }
 
@@ -388,11 +396,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   z-index: 20;
 }
@@ -440,7 +448,7 @@ body {
 .secondary-hero {
   margin-top: 6rem;
   height: 560px;
-  background-image: url("../../assets/home/mobile/image-small-team.jpg");
+  background-image: url("./assets/home/mobile/image-small-team.jpg");
 }
 
 .secondary-hero .hero-content button {
@@ -457,8 +465,8 @@ body {
 .featured-header button {
   position: absolute;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: calc(100% - 4rem);
   bottom: 0;
 }
@@ -471,15 +479,15 @@ body {
 }
 
 .featured-card.featured-1 {
-  background-image: url("../../assets/portfolio/mobile/image-del-sol.jpg");
+  background-image: url("./assets/portfolio/mobile/image-del-sol.jpg");
 }
 
 .featured-card.featured-2 {
-  background-image: url("../../assets/portfolio/mobile/image-228b.jpg");
+  background-image: url("./assets/portfolio/mobile/image-228b.jpg");
 }
 
 .featured-card.featured-3 {
-  background-image: url("../../assets/portfolio/mobile/image-prototype.jpg");
+  background-image: url("./assets/portfolio/mobile/image-prototype.jpg");
 }
 
 .featured-card h1 {
@@ -490,8 +498,18 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.500438)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.500438) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.500438)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.500438) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .featured-card-text {
@@ -507,7 +525,7 @@ body {
     margin: 0 8rem;
   }
   .primary-hero {
-    background-image: url("../../assets/home/tablet/image-hero-paramour.jpg");
+    background-image: url("./assets/home/tablet/image-hero-paramour.jpg");
   }
   .primary-hero .hero-description {
     width: 29rem;
@@ -521,7 +539,7 @@ body {
     color: #eeeff4;
   }
   .secondary-hero {
-    background-image: url("../../assets/home/tablet/image-small-team.jpg");
+    background-image: url("./assets/home/tablet/image-small-team.jpg");
   }
   .secondary-hero .hero-content h1 {
     max-width: 22rem;
@@ -532,13 +550,13 @@ body {
     margin-top: 12rem;
   }
   .featured-card.featured-1 {
-    background-image: url("../../assets/portfolio/tablet/image-del-sol.jpg");
+    background-image: url("./assets/portfolio/tablet/image-del-sol.jpg");
   }
   .featured-card.featured-2 {
-    background-image: url("../../assets/portfolio/tablet/image-228b.jpg");
+    background-image: url("./assets/portfolio/tablet/image-228b.jpg");
   }
   .featured-card.featured-3 {
-    background-image: url("../../assets/portfolio/tablet/image-prototype.jpg");
+    background-image: url("./assets/portfolio/tablet/image-prototype.jpg");
   }
   .featured-card h1 {
     display: initial;
@@ -554,8 +572,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .featured-header button {
     height: -webkit-fit-content;
@@ -569,7 +587,7 @@ body {
 
 @media (min-width: 1024px) {
   .primary-hero {
-    background-image: url("../../assets/home/desktop/image-hero-paramour.jpg");
+    background-image: url("./assets/home/desktop/image-hero-paramour.jpg");
   }
   .hero-content {
     padding-left: 190px;
@@ -600,8 +618,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .welcome-content-left {
     margin-left: 14rem;
@@ -612,10 +630,10 @@ body {
     width: 350px;
     height: 568px;
     display: inline;
-    background-image: url("../../assets/home/desktop/image-welcome.jpg");
+    background-image: url("./assets/home/desktop/image-welcome.jpg");
   }
   .secondary-hero {
-    background-image: url("../../assets/home/desktop/image-small-team.jpg");
+    background-image: url("./assets/home/desktop/image-small-team.jpg");
     background-size: cover;
   }
   .secondary-hero.hero {
@@ -626,21 +644,21 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .featured-card {
     height: 560px;
     width: 350px;
   }
   .featured-card.featured-1 {
-    background-image: url("../../assets/portfolio/desktop/image-del-sol.jpg");
+    background-image: url("./assets/portfolio/desktop/image-del-sol.jpg");
   }
   .featured-card.featured-2 {
-    background-image: url("../../assets/portfolio/desktop/image-228b.jpg");
+    background-image: url("./assets/portfolio/desktop/image-228b.jpg");
   }
   .featured-card.featured-3 {
-    background-image: url("../../assets/portfolio/desktop/image-prototype.jpg");
+    background-image: url("./assets/portfolio/desktop/image-prototype.jpg");
   }
 }
 /*# sourceMappingURL=styles.css.map */
